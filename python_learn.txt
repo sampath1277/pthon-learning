@@ -1,0 +1,120 @@
+PYTHON:
+
+varibles: Variables are containers for storing data values.
+Python has no command for declaring a variable.
+A variable is created the moment you first assign a value to it.
+
+age = 20
+print(age)
+
+result=20
+---
+list declare and print
+mylist = ["apple", "banana", "cherry"]
+print(mylist[2])
+
+--
+modify list:
+mylist = ["apple", "banana", "cherry"]
+print(mylist[2])
+mylist[2]="orange"
+print(mylist)
+
+---
+append to list:
+mylist = ["apple", "banana", "cherry"]
+mylist.append("orange")
+print(mylist)
+
+----
+insert item any where in list:
+
+mylist = ["apple", "banana", "cherry"]
+mylist.insert(0,"mango")
+mylist.insert(2,"mango")
+print(mylist)
+
+---
+
+Remove from list:
+
+mylist = ["apple", "banana", "cherry"]
+removeItem = mylist[2]
+mylist.remove(removeItem)
+print(mylist)
+
+----
+Remove from list
+
+mylist = ["apple", "banana", "cherry","orange"]
+
+length =len(mylist)
+lastitemindex=length-1
+print(mylist[lastitemindex])
+
+mylist.remove(mylist[lastitemindex])
+
+print(mylist)
+
+
+----
+
+Number list add and remove
+mylist = [100,101,102,103]
+
+mylist.append(104)
+print(mylist)
+mylist.remove(104)
+print(mylist)
+
+----
+
+loop add conditions
+
+mylist=[101,102,103,104]
+remineList=[100]
+for number in mylist:
+    if number != 102:
+        remineList.append(number)
+        print(remineList)
+
+------------
+
+define funtion
+
+def printHello():
+  print("Hello from a function")
+
+printHello()
+
+----
+funtion 
+
+def printHello():
+  print("Hello from a function")
+
+def printHelloReturn():
+  return "Hello from a function"
+
+def printAge():
+  age = 20
+  print(age)
+
+def returnAge():
+  return 26
+
+def myList():
+  mylist = ["apple", "banana", "cherry"]
+  print(mylist)
+
+def myListReturn():
+  mylist = ["apple", "banana", "cherry"]
+  return mylist
+
+
+def returnNumber():
+  return 10
+
+
+strigReturned = returnAge()
+print(strigReturned)
